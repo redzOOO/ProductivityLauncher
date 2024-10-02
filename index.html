@@ -1,70 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productive Workspace</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome, [Your Name]</h1>
-        <p>Your productive workspace</p>
-    </header>
-    
-    <!-- Dashboard Overview Section -->
-    <section id="dashboard">
-        <h2>Dashboard Overview</h2>
-        <p>Upcoming Deadlines, Critical Issues, Service Desk Status</p>
-        <!-- Here you can embed a task overview or service desk snapshot -->
-    </section>
+/* General Body and Header Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Task Management Section -->
-    <section id="tasks">
-        <h2>Task Management</h2>
-        <iframe src="https://[your-task-tool].com" frameborder="0"></iframe>
-    </section>
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-    <!-- Service Desk Monitoring -->
-    <section id="service-desk">
-        <h2>Service Desk Monitoring</h2>
-        <iframe src="https://[your-service-desk].com" frameborder="0"></iframe>
-    </section>
+/* Container for fluid layout using Flexbox */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
 
-    <!-- Ongoing Projects -->
-    <section id="projects">
-        <h2>Ongoing Projects</h2>
-        <p>Here’s where you track milestones and project statuses</p>
-        <!-- You can include progress bars or status indicators -->
-    </section>
+/* Left and Right columns */
+.left-column, .right-column {
+    flex: 1;
+    margin: 10px;
+}
 
-    <!-- Quick Links Section -->
-    <section id="quick-links">
-        <h2>Quick Links</h2>
-        <ul>
-            <li><a href="https://admin.microsoft.com">Microsoft 365 Admin</a></li>
-            <li><a href="https://portal.azure.com">Azure Portal</a></li>
-            <li><a href="https://intune.microsoft.com">Intune</a></li>
-            <!-- Add more links to tools you use frequently -->
-        </ul>
-    </section>
+/* Styling for Sections */
+section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
 
-    <!-- Calendar Embed -->
-    <section id="calendar">
-        <h2>Upcoming Meetings</h2>
-        <iframe src="https://outlook.office.com/calendar" frameborder="0"></iframe>
-    </section>
+h2 {
+    color: #333;
+}
 
-    <!-- Personal Productivity Tools -->
-    <section id="productivity-tools">
-        <h2>Productivity Tools</h2>
-        <p>Quick access to Pomodoro timers, notes, and focus tools</p>
-    </section>
+/* Quick Links List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
 
-    <footer>
-        <p>Made for your productivity</p>
-    </footer>
+ul li {
+    margin: 10px 0;
+}
 
-    <script src="app.js"></script>
-</body>
-</html>
+ul li a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+/* Styling for Embedded Iframes */
+iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+/* Calendar and Productivity Tools Sections */
+#calendar, #productivity-tools {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    iframe {
+        height: 400px;
+    }
+}
