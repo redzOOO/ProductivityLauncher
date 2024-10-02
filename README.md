@@ -17,8 +17,7 @@ This is a custom-built web app designed to serve as a personal landing page for 
 - **HTML**: Structure of the web app.
 - **CSS (Flexbox)**: Responsive and fluid layout for desktop and mobile views.
 - **JavaScript**: Basic interactivity (can be expanded for more features).
-- **Hosting Options**: Can be hosted on GitHub Pages, Netlify, or Azure Static Web Apps.
-
+- **Hosting Options**: Hosted on GitHub Pages
 ## Installation & Usage
 
 1. **Clone the repository**:
