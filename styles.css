@@ -9,9 +9,11 @@ body {
 header {
     background-color: #4a90e2;
     color: white;
-    padding: 10px;  /* Reduced padding for smaller header */
+    padding: 5px;  /* Small strip for header */
     text-align: center;
-    font-size: 20px;  /* Smaller font size for a more compact header */
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* Grid Layout for fluid responsiveness */
@@ -37,10 +39,10 @@ header {
 
 /* Box Title Styling */
 .box-title {
-    background-color: #4a90e2;
-    color: white;
+    background-color: #f0f0f0;  /* Slight background color */
+    color: #333;
     padding: 10px;
-    text-align: center;
+    text-align: center;  /* Center the text */
     font-size: 18px;
     border-radius: 8px 8px 0 0;  /* Rounded edges at the top */
     margin: -20px -20px 10px -20px; /* Extend title to the edges */
