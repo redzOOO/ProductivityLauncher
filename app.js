@@ -63,4 +63,17 @@ document.addEventListener('DOMContentLoaded', () => {
             todoItems.appendChild(li);
             todoInput.value = ''; // Clear input field
 
-            // Add event listener
+            // Add event listener to delete button
+            li.querySelector('.delete-todo').addEventListener('click', function() {
+                li.remove();
+            });
+        }
+    });
+
+    // Optional: Add task by pressing Enter key
+    todoInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            addTodoButton.click();
+        }
+    });
+});
