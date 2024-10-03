@@ -9,9 +9,9 @@ body {
 header {
     background-color: #4a90e2;
     color: white;
-    padding: 20px;
+    padding: 10px;  /* Reduced padding for smaller header */
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;  /* Smaller font size for a more compact header */
 }
 
 /* Grid Layout for fluid responsiveness */
@@ -25,20 +25,28 @@ header {
 .grid-item {
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px;  /* Slightly rounded edges */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d3d3d3;  /* Small border around the boxes */
+    position: relative;
 }
 
 .full-width {
     grid-column: span 2;
 }
 
-h2 {
-    color: #4a90e2;
-    font-size: 20px;
-    margin-bottom: 15px;
+/* Box Title Styling */
+.box-title {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px 8px 0 0;  /* Rounded edges at the top */
+    margin: -20px -20px 10px -20px; /* Extend title to the edges */
 }
 
+/* Rest of the Content */
 ul {
     list-style: none;
     padding: 0;
@@ -118,20 +126,6 @@ iframe {
 
 #todo-items li button:hover {
     background-color: #d32f2f;
-}
-
-/* Styling for the Service Desk Ticket List */
-.ticket-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.ticket-list li {
-    background-color: #e0f7fa;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styling */
