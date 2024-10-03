@@ -9,7 +9,6 @@
 <body>
     <header>
         <h1>Welcome, [Your Name]</h1>
-        <p>Your productive workspace</p>
     </header>
 
     <!-- Container for the grid layout -->
@@ -17,19 +16,19 @@
 
         <!-- Dashboard Overview -->
         <section id="dashboard" class="grid-item">
-            <h2>Dashboard Overview</h2>
+            <div class="box-title">Dashboard Overview</div>
             <p>Upcoming Deadlines, Critical Issues, Service Desk Status</p>
         </section>
 
         <!-- Task Management -->
         <section id="tasks" class="grid-item">
-            <h2>Task Management</h2>
+            <div class="box-title">Task Management</div>
             <iframe src="https://[your-task-tool].com" frameborder="0"></iframe>
         </section>
 
         <!-- Service Desk Monitoring -->
         <section id="service-desk" class="grid-item">
-            <h2>Service Desk Monitoring</h2>
+            <div class="box-title">Service Desk Monitoring</div>
             <div id="service-desk-content">
                 <!-- Ticket data will be dynamically loaded here -->
             </div>
@@ -37,13 +36,13 @@
 
         <!-- Ongoing Projects -->
         <section id="projects" class="grid-item">
-            <h2>Ongoing Projects</h2>
+            <div class="box-title">Ongoing Projects</div>
             <p>Track milestones and project statuses</p>
         </section>
 
         <!-- Quick Links -->
         <section id="quick-links" class="grid-item">
-            <h2>Quick Links</h2>
+            <div class="box-title">Quick Links</div>
             <ul>
                 <li><a href="https://admin.microsoft.com">Microsoft 365 Admin</a></li>
                 <li><a href="https://portal.azure.com">Azure Portal</a></li>
@@ -53,13 +52,13 @@
 
         <!-- Calendar -->
         <section id="calendar" class="grid-item full-width">
-            <h2>Upcoming Meetings</h2>
+            <div class="box-title">Upcoming Meetings</div>
             <iframe src="https://outlook.office.com/calendar" frameborder="0"></iframe>
         </section>
 
         <!-- To-Do List -->
         <section id="todo-list" class="grid-item full-width">
-            <h2>Quick To-Do List</h2>
+            <div class="box-title">Quick To-Do List</div>
             <div class="todo-container">
                 <input type="text" id="todo-input" placeholder="Add a new task" />
                 <button id="add-todo">Add</button>
@@ -72,7 +71,6 @@
         <p>Made for your productivity</p>
     </footer>
 
-    <!-- JavaScript for interactivity and ManageEngine API integration -->
     <script src="app.js"></script>
 </body>
 </html>
