@@ -120,6 +120,20 @@ iframe {
     background-color: #d32f2f;
 }
 
+/* Styling for the Service Desk Ticket List */
+.ticket-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ticket-list li {
+    background-color: #e0f7fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Footer Styling */
 footer {
     text-align: center;
